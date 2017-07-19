@@ -1,0 +1,14 @@
+<% extend('layout') %>
+
+    <h1>
+        <%= title %>
+    </h1>
+    <ul>
+        <% articles.forEach(function(article) { %>
+            <li>
+
+                <a href="/article/<%= article._id%> "><span><%= article.title %> </span><a>
+
+            </li>
+            <% }) %>
+    </ul>
